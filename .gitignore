@@ -1,0 +1,17 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Editor & IDE artifacts
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporary logs
+*.log
+data/runtime/

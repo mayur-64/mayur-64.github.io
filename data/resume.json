@@ -1,0 +1,150 @@
+{
+  "personal": {
+    "name": "Mayur",
+    "role": "Backend & Full-Stack Developer",
+    "headline": "Building robust backend services, resilient Linux systems, and elegant web experiences.",
+    "bio": "Passionate software engineer focused on building performant backend architectures, scalable web applications, and streamlined developer workflows. Deep hands-on experience with Python, Linux systems, modern JavaScript, and clean API design.",
+    "location": "Remote / Worldwide",
+    "email": "mayur.dev@example.com",
+    "github": "https://github.com/mayur-64",
+    "linkedin": "https://linkedin.com/in/mayur-dev",
+    "twitter": "https://x.com/mayur_dev",
+    "status": "Available for opportunities",
+    "resumeUrl": "assets/resume.pdf"
+  },
+  "theme": {
+    "defaultTheme": "dark",
+    "palette": "indigo",
+    "fontPairing": "inter"
+  },
+  "skills": [
+    {
+      "category": "Languages & Core",
+      "items": [
+        { "name": "Python", "level": "Expert" },
+        { "name": "JavaScript (ES6+)", "level": "Advanced" },
+        { "name": "Bash / Shell", "level": "Advanced" },
+        { "name": "SQL (PostgreSQL / SQLite)", "level": "Advanced" },
+        { "name": "HTML5 & Modern CSS", "level": "Expert" }
+      ]
+    },
+    {
+      "category": "Backend & Architecture",
+      "items": [
+        { "name": "FastAPI & Starlette", "level": "Expert" },
+        { "name": "RESTful API Design", "level": "Expert" },
+        { "name": "AsyncIO & uvloop", "level": "Advanced" },
+        { "name": "Microservices", "level": "Advanced" },
+        { "name": "Concurrency & Multi-processing", "level": "Advanced" }
+      ]
+    },
+    {
+      "category": "Systems & DevOps",
+      "items": [
+        { "name": "Linux / POSIX Systems", "level": "Advanced" },
+        { "name": "Git & GitHub Actions", "level": "Advanced" },
+        { "name": "ARM64 Architecture Tuning", "level": "Advanced" },
+        { "name": "Process & Runtime Monitoring", "level": "Advanced" },
+        { "name": "CI/CD & Zero-Downtime Deploys", "level": "Proficient" }
+      ]
+    },
+    {
+      "category": "Quality & Standards",
+      "items": [
+        { "name": "Lighthouse 100/100 Auditing", "level": "Expert" },
+        { "name": "Web Accessibility (WCAG AA)", "level": "Expert" },
+        { "name": "Responsive Mobile-First Design", "level": "Expert" },
+        { "name": "Unit & Integration Testing", "level": "Advanced" },
+        { "name": "Performance Profiling", "level": "Advanced" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-monitor",
+      "title": "Project Monitor PaaS",
+      "subtitle": "Personal PaaS Control Plane & Process Monitor",
+      "description": "Engineered a low-overhead process monitoring and management dashboard for Linux environments. Features real-time metric telemetry, PID tracking, and graceful signal orchestration.",
+      "tags": ["Python", "FastAPI", "Linux", "Vanilla JS", "REST"],
+      "github": "https://github.com/mayur-64/project-monitor",
+      "demo": "https://github.com/mayur-64/project-monitor",
+      "featured": true,
+      "metrics": "Zero-dependency background manager with live metrics",
+      "image": "assets/images/project-1.svg"
+    },
+    {
+      "id": "pocketgallery",
+      "title": "PocketGallery Media Engine",
+      "subtitle": "Fast Media Streaming & Photo Indexer",
+      "description": "Single-source-of-truth photo and video streaming application with WAL-mode SQLite indexing, FFmpeg thumbnailing pipeline, and responsive masonry gallery interface.",
+      "tags": ["Python", "FastAPI", "SQLite", "FFmpeg", "Pillow"],
+      "github": "https://github.com/mayur-64/pocketgallery",
+      "demo": "https://github.com/mayur-64/pocketgallery",
+      "featured": true,
+      "metrics": "Sub-millisecond query latency on 50k+ media assets",
+      "image": "assets/images/project-2.svg"
+    },
+    {
+      "id": "cloud-orchestrator",
+      "title": "Edge Task Orchestrator",
+      "subtitle": "Lightweight Micro-Task Scheduler",
+      "description": "Async cron engine and distributed job worker tailored for resource-constrained ARM64 edge nodes. Provides fault-tolerant retries and isolated subprocess runners.",
+      "tags": ["Python", "AsyncIO", "ARM64", "IPC", "Cron"],
+      "github": "https://github.com/mayur-64/edge-orchestrator",
+      "demo": "https://github.com/mayur-64/edge-orchestrator",
+      "featured": false,
+      "metrics": "Minimal memory footprint under 24MB RSS",
+      "image": "assets/images/project-3.svg"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "role": "Senior Backend & Systems Engineer",
+      "company": "Tech Horizon Systems",
+      "location": "Remote",
+      "period": "2023 — Present",
+      "current": true,
+      "bullets": [
+        "Architected high-throughput API microservices processing 12M+ daily requests with 99.98% availability.",
+        "Optimized database query execution and connection pooling, slashing p95 latency by 45%.",
+        "Streamlined automated testing and CI/CD pipelines, reducing deployment turnaround times from 35m to 6m."
+      ]
+    },
+    {
+      "id": "exp-2",
+      "role": "Software Engineer",
+      "company": "Apex Cloud Solutions",
+      "location": "San Francisco, CA (Remote)",
+      "period": "2021 — 2023",
+      "current": false,
+      "bullets": [
+        "Developed full-stack web applications and internal telemetry dashboards utilizing Python, JavaScript, and relational databases.",
+        "Integrated asynchronous queue workers and background event subscribers for real-time edge hardware notifications.",
+        "Championed accessibility improvements and performance audits, consistently securing 95+ Lighthouse scores across web apps."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Technology",
+      "period": "2017 — 2021",
+      "location": "Honors Graduate",
+      "details": "Focus on Systems Programming, Distributed Architectures, and Database Internals."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Linux Professional Institute LPIC-1",
+      "issuer": "Linux Professional Institute",
+      "year": "2023"
+    },
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "year": "2022"
+    }
+  ]
+}

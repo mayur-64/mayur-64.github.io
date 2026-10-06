@@ -1,0 +1,136 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2562 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 780 Td
+/F2 16 Tf
+(MAYUR - BACKEND & FULL-STACK DEVELOPER) Tj
+/F1 10 Tf
+T*
+(Email: mayur.dev@example.com | GitHub: github.com/mayur-64 | Location: Remote) Tj
+T*
+(--------------------------------------------------------------------------------) Tj
+T*
+() Tj
+T*
+/F2 12 Tf
+T*
+(SUMMARY) Tj
+/F1 10 Tf
+T*
+(Passionate software engineer focused on building performant backend architectures,) Tj
+T*
+(scalable web applications, and streamlined automation workflows. Experienced with Python,) Tj
+T*
+(Linux systems, modern JavaScript, and clean API design.) Tj
+T*
+() Tj
+T*
+/F2 12 Tf
+T*
+(TECHNICAL SKILLS) Tj
+/F1 10 Tf
+T*
+(* Languages: Python, JavaScript \(ES6+\), SQL, Bash / Shell, HTML5 & Modern CSS) Tj
+T*
+(* Backend: FastAPI, Starlette, AsyncIO, RESTful APIs, Concurrency, Microservices) Tj
+T*
+(* Systems & DevOps: Linux/POSIX, Git, GitHub Actions, ARM64 Kryo, Process Management) Tj
+T*
+(* Quality: WCAG AA Accessibility, Lighthouse 100/100, Performance Profiling) Tj
+T*
+() Tj
+T*
+/F2 12 Tf
+T*
+(FEATURED PROJECTS) Tj
+/F1 10 Tf
+T*
+(* Project Monitor PaaS - Personal PaaS control plane and health monitoring dashboard.) Tj
+T*
+(  Stack: Python, FastAPI, Linux, REST API, WebSocket.) Tj
+T*
+(* PocketGallery - High-performance photo and video indexing engine.) Tj
+T*
+(  Stack: Python, FastAPI, SQLite WAL, Vanilla JS, FFmpeg.) Tj
+T*
+(* Edge Task Orchestrator - Async micro-task scheduler for ARM64 edge systems.) Tj
+T*
+(  Stack: Python, AsyncIO, Multi-Processing.) Tj
+T*
+() Tj
+T*
+/F2 12 Tf
+T*
+(EXPERIENCE) Tj
+/F1 10 Tf
+T*
+(* Senior Backend & Systems Developer | Tech Horizon Systems \(2023 - Present\)) Tj
+T*
+(  - Architected high-throughput API microservices handling 12M+ daily requests.) Tj
+T*
+(  - Optimized SQLite WAL concurrency and query plans, cutting p95 latency by 45%.) Tj
+T*
+(  - Streamlined automated CI/CD pipelines, slashing build times from 35m to 6m.) Tj
+T*
+() Tj
+T*
+(* Software Engineer | Apex Cloud Solutions \(2021 - 2023\)) Tj
+T*
+(  - Developed full-stack web applications and internal telemetry dashboards.) Tj
+T*
+(  - Integrated real-time edge telemetry and asynchronous queue workers.) Tj
+T*
+() Tj
+T*
+/F2 12 Tf
+T*
+(EDUCATION & CERTIFICATIONS) Tj
+/F1 10 Tf
+T*
+(* B.S. in Computer Science - University of Technology \(Honors Graduate\)) Tj
+T*
+(* Linux Professional Institute Certification \(LPIC-1\) | AWS Certified Solutions Architect) Tj
+T*
+() Tj
+T*
+(--------------------------------------------------------------------------------) Tj
+T*
+(\(Generated placeholder resume - update anytime in Studio or swap with your PDF\)) Tj
+T*
+ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002865 00000 n 
+0000002935 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3010
+%%EOF

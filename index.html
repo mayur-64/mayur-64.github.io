@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: Title - Customize with your name and role -->
+  <title>Mayur | Backend & Full-Stack Developer</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <!-- TODO: Meta Description -->
+  <meta name="description" content="Personal portfolio and resume of Mayur — Backend and Full-Stack Developer specializing in Python, Linux systems, APIs, and high-performance web applications.">
+  <meta name="keywords" content="Backend Developer, Python, Linux, FastAPI, Portfolio, Resume, Full-Stack, Software Engineer">
+  <meta name="author" content="Mayur">
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mayur | Backend & Full-Stack Developer">
+  <meta property="og:description" content="Personal portfolio and resume: engineering robust backend architectures and performant web systems.">
+  <meta property="og:image" content="./assets/images/project-1.svg">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mayur | Backend & Full-Stack Developer">
+  <meta name="twitter:description" content="Personal portfolio and resume: engineering robust backend architectures and performant web systems.">
+  <meta name="twitter:image" content="./assets/images/project-1.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Stylesheet (Relative path for GitHub Pages compatibility) -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <!-- TODO: Brand Monogram / Initials -->
+      <a href="#hero" class="logo-brand" aria-label="Mayur Portfolio Home">
+        <span class="logo-icon">M</span>
+        <span>Mayur<span style="color: var(--accent-cyan);">.dev</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav id="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Studio Editor Launcher & Theme Toggle -->
+      <div class="nav-actions">
+        <a href="./editor.html" class="btn-studio" title="Open Resume & Portfolio Studio Editor" aria-label="Open Studio Editor">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+          <span>Studio</span>
+        </a>
+
+        <button id="theme-toggle" class="btn-icon" aria-label="Switch Theme" type="button">
+          <!-- Populated dynamically by main.js -->
+        </button>
+
+        <button id="mobile-menu-btn" class="btn-icon mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" type="button">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- ======================================================================
+         1. Hero Section
+         ====================================================================== -->
+    <section id="hero" class="section-hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <!-- Status Indicator -->
+        <div class="badge-status">
+          <span class="status-dot"></span>
+          <!-- TODO: Current Status -->
+          <span>Available for opportunities & projects</span>
+        </div>
+
+        <p class="hero-greeting">Hi, my name is</p>
+        <!-- TODO: Name -->
+        <h1 id="hero-title" class="hero-title">
+          <span class="text-gradient">Mayur.</span>
+        </h1>
+        <!-- TODO: Role & Headline -->
+        <p class="hero-headline">Backend & Full-Stack Developer | Python & Linux Systems</p>
+        
+        <!-- TODO: Short Bio -->
+        <p class="hero-bio">
+          I build high-throughput backend microservices, resilient Linux daemons, and polished, responsive web interfaces. Focused on performance profiling, clean architecture, and zero-bloat software design.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="./assets/resume.pdf" class="btn btn-primary" download="Mayur_Resume.pdf" id="hero-resume-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Get In Touch
+          </a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">4+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">10M+</span>
+            <span class="stat-label">Daily API Requests</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100/100</span>
+            <span class="stat-label">Lighthouse Audits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. About Section
+         ====================================================================== -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01. Overview</span>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief overview of my engineering philosophy, background, and what drives me.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <!-- TODO: Detailed About Narrative -->
+            <p>
+              Hello! I am a software engineer with deep interest in systems architecture, backend engineering, and robust web standards. Over the past 4+ years, I have worked across the stack—from tuning kernel-level process management in Linux environments to delivering responsive frontend experiences.
+            </p>
+            <p>
+              I believe in simple, maintainable software with zero unnecessary dependencies. Whether designing high-concurrency Python microservices with uvloop or architecting SQLite WAL data pipelines, I prioritize predictable latency, clear documentation, and testability.
+            </p>
+            <p>
+              When I'm not writing code, I explore lightweight edge hardware performance, open-source utilities, and developer tooling automation.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                Distributed Systems & APIs
+              </h4>
+              <p>Designing RESTful interfaces, asynchronous task queues, and resilient service orchestration.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                Linux & System Internals
+              </h4>
+              <p>POSIX process management, low-overhead resource profiling, and ARM64 architecture tuning.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Performance & Accessibility
+              </h4>
+              <p>Achieving 100/100 Lighthouse metrics with clean semantic HTML and WCAG AA compliance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Skills Section
+         ====================================================================== -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02. Capabilities</span>
+          <h2 id="skills-title" class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core technologies, frameworks, and methodologies I leverage daily.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Languages & Core
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill"><span class="skill-level-dot"></span>Python 3</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Bash / Shell</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>SQL (PostgreSQL / SQLite)</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>HTML5 & Modern CSS</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="skill-category-card">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
+              Backend & Architecture
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill"><span class="skill-level-dot"></span>FastAPI & Starlette</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>RESTful API Design</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>AsyncIO & uvloop</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Microservices</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Multi-processing Parallelism</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Systems & DevOps -->
+          <div class="skill-category-card">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              Systems & DevOps
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill"><span class="skill-level-dot"></span>Linux / POSIX Systems</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Git & GitHub Actions CI</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Process Runtime & PID Tracking</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>ARM64 Kryo Tuning</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Zero-Downtime Deployment</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Standards -->
+          <div class="skill-category-card">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Quality & Optimization
+            </h3>
+            <div class="skill-pills">
+              <span class="skill-pill"><span class="skill-level-dot"></span>Lighthouse 100/100 Auditing</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Web Accessibility (WCAG AA)</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Mobile-First Responsive UI</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Unit & Integration Tests</span>
+              <span class="skill-pill"><span class="skill-level-dot"></span>Profiling & Latency Reduction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. Projects Section
+         ====================================================================== -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. Portfolio</span>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world production tools and backend systems engineered for speed and reliability.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <!-- TODO: Project 1 Details -->
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <img src="./assets/images/project-1.svg" alt="Project Monitor PaaS dashboard preview" loading="lazy">
+              <span class="project-featured-badge">Featured</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Monitor PaaS</h3>
+              <p class="project-subtitle">Personal PaaS Control Plane & Process Monitor</p>
+              <p class="project-desc">
+                Engineered a low-overhead process monitoring and management dashboard for Linux environments. Features real-time metric telemetry, PID tracking, and graceful signal orchestration.
+              </p>
+              <div class="project-metrics">✓ Zero-dependency background manager with live metrics</div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">Linux</span>
+                <span class="project-tag">Vanilla JS</span>
+                <span class="project-tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mayur-64/project-monitor" class="project-link-item" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="https://github.com/mayur-64/project-monitor" class="project-link-item" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <!-- TODO: Project 2 Details -->
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <img src="./assets/images/project-2.svg" alt="PocketGallery media engine architecture diagram" loading="lazy">
+              <span class="project-featured-badge">Featured</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PocketGallery Media Engine</h3>
+              <p class="project-subtitle">Fast Media Streaming & Photo Indexer</p>
+              <p class="project-desc">
+                Single-source-of-truth photo and video streaming application with WAL-mode SQLite indexing, FFmpeg thumbnailing pipeline, and responsive masonry gallery interface.
+              </p>
+              <div class="project-metrics">✓ Sub-millisecond query latency on 50k+ media assets</div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">SQLite WAL</span>
+                <span class="project-tag">FFmpeg</span>
+                <span class="project-tag">Pillow</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mayur-64/pocketgallery" class="project-link-item" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="https://github.com/mayur-64/pocketgallery" class="project-link-item" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <!-- TODO: Project 3 Details -->
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <img src="./assets/images/project-3.svg" alt="Edge Task Orchestrator multi-core worker preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Edge Task Orchestrator</h3>
+              <p class="project-subtitle">Lightweight Micro-Task Scheduler</p>
+              <p class="project-desc">
+                Async cron engine and distributed job worker tailored for resource-constrained ARM64 edge nodes. Provides fault-tolerant retries and isolated subprocess runners without GIL lock contention.
+              </p>
+              <div class="project-metrics">✓ Minimal memory footprint under 24MB RSS</div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">AsyncIO</span>
+                <span class="project-tag">Multi-Processing</span>
+                <span class="project-tag">ARM64</span>
+                <span class="project-tag">Cron</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mayur-64/edge-orchestrator" class="project-link-item" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="https://github.com/mayur-64/edge-orchestrator" class="project-link-item" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  View Details
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Experience & Education Timeline Section
+         ====================================================================== -->
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04. Background</span>
+          <h2 id="experience-title" class="section-title">Experience & Education</h2>
+          <p class="section-subtitle">Chronological progression of professional responsibilities and formal training.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Experience 1 -->
+          <!-- TODO: Experience 1 Details -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Senior Backend & Systems Engineer</h3>
+                <span class="timeline-period">2023 — Present</span>
+              </div>
+              <div class="timeline-company">Tech Horizon Systems • Remote</div>
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet">Architected high-throughput API microservices processing 12M+ daily requests with 99.98% availability.</li>
+                <li class="timeline-bullet">Optimized database query execution and connection pooling, slashing p95 latency by 45%.</li>
+                <li class="timeline-bullet">Streamlined automated testing and CI/CD pipelines, reducing deployment turnaround times from 35m to 6m.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <!-- TODO: Experience 2 Details -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <span class="timeline-period">2021 — 2023</span>
+              </div>
+              <div class="timeline-company">Apex Cloud Solutions • San Francisco, CA (Remote)</div>
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet">Developed full-stack web applications and internal telemetry dashboards utilizing Python, JavaScript, and relational databases.</li>
+                <li class="timeline-bullet">Integrated asynchronous queue workers and background event subscribers for real-time edge hardware notifications.</li>
+                <li class="timeline-bullet">Championed accessibility improvements and performance audits, consistently securing 95+ Lighthouse scores across web apps.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <!-- TODO: Education Details -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">B.S. in Computer Science</h3>
+                <span class="timeline-period">2017 — 2021</span>
+              </div>
+              <div class="timeline-company">University of Technology • Honors Graduate</div>
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet">Specialized in Systems Programming, Distributed Architectures, and Database Internals.</li>
+                <li class="timeline-bullet">Active contributor to student Linux user group and competitive programming teams.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Resume Section
+         ====================================================================== -->
+    <section id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05. Documentation</span>
+          <h2 id="resume-title" class="section-title">Resume & Curriculum Vitae</h2>
+          <p class="section-subtitle">Readily available for recruiters and hiring managers in printable and downloadable format.</p>
+        </div>
+
+        <div class="resume-wrapper">
+          <div class="resume-cta-bar">
+            <div class="resume-info">
+              <h3>Mayur_Resume.pdf</h3>
+              <p>Standard format • Updated for current roles • Print-optimized</p>
+            </div>
+            <div class="resume-actions">
+              <a href="./assets/resume.pdf" class="btn btn-primary" download="Mayur_Resume.pdf" id="resume-download-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download PDF
+              </a>
+              <button type="button" class="btn btn-secondary" onclick="window.print()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                Print / Save PDF
+              </button>
+            </div>
+          </div>
+
+          <!-- Text Preview fallback -->
+          <div class="resume-preview-box">
+            <pre><code>MAYUR — BACKEND & FULL-STACK DEVELOPER
+Location: Remote | Email: mayur.dev@example.com | GitHub: github.com/mayur-64
+
+CORE COMPETENCIES:
+• Backend: Python (FastAPI, Starlette, AsyncIO), RESTful APIs, Concurrency
+• Systems: Linux/POSIX, Git, Process Management, ARM64 Kryo Architecture
+• Frontend: Modern Vanilla JS, Semantic HTML5, Responsive CSS, WCAG AA
+
+EXPERIENCE HIGHLIGHTS:
+• Senior Backend Engineer @ Tech Horizon Systems (2023 - Present)
+  - 12M+ daily requests API microservices architecture
+  - SQLite WAL query optimization, -45% latency reduction
+• Software Engineer @ Apex Cloud Solutions (2021 - 2023)
+  - Real-time IoT edge telemetry and internal dashboards
+
+EDUCATION:
+• B.S. in Computer Science — University of Technology (Honors Graduate)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. Contact Section
+         ====================================================================== -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-tag">06. Next Steps</span>
+          <h2 id="contact-title" class="contact-heading">Get In Touch</h2>
+          <!-- TODO: Contact Text -->
+          <p class="contact-text">
+            I am currently open to exciting backend engineering roles, systems infrastructure opportunities, and collaborative technical projects. Feel free to reach out directly!
+          </p>
+
+          <div class="contact-actions">
+            <!-- TODO: Mailto link -->
+            <a href="mailto:mayur.dev@example.com" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Say Hello
+            </a>
+            <!-- Copy Email Button -->
+            <button type="button" class="btn btn-secondary" id="copy-email-btn" data-email="mayur.dev@example.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Email Address
+            </button>
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact-socials">
+            <!-- TODO: GitHub link -->
+            <a href="https://github.com/mayur-64" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <!-- TODO: LinkedIn link -->
+            <a href="https://linkedin.com/in/mayur-dev" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+            <!-- TODO: Twitter / X link -->
+            <a href="https://x.com/mayur_dev" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              Twitter / X
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. Footer
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-wrapper">
+      <p>© <span id="current-year"></span> Mayur. Built with clean HTML, CSS & Vanilla JS. Zero tracking.</p>
+      
+      <ul class="footer-nav">
+        <li><a href="./editor.html" class="footer-link">Studio Editor</a></li>
+        <li><a href="#hero" class="btn-top" id="back-to-top" aria-label="Back to top of page">Back to top ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <aside id="toast-notice" class="toast-notice" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-msg">Copied!</span>
+  </aside>
+
+  <!-- Main JavaScript File (Relative path) -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
