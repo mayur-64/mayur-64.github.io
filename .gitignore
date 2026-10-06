@@ -15,3 +15,5 @@ __pycache__/
 # Temporary logs
 *.log
 data/runtime/
+dev_server.pid
+dev_server.log
