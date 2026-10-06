@@ -119,27 +119,24 @@ def test_http_endpoints():
     print(f"✓ All {len(endpoints)} HTTP endpoints successfully returned status 200.")
 
 def test_api_save_and_deploy():
-    # Test POST /api/save
-    save_url = BASE_URL + '/api/save'
-    payload = {
-        "data": {
-            "personal": {
-                "name": "Mayur",
-                "role": "Backend & Full-Stack Developer",
-                "headline": "Building robust backend services, resilient Linux systems, and elegant web experiences.",
-                "bio": "Passionate software engineer focused on building performant backend architectures, scalable web applications, and streamlined developer workflows.",
-                "location": "Remote / Worldwide",
-                "email": "mayur.dev@example.com",
-                "github": "https://github.com/mayur-64",
-                "status": "Available for opportunities"
-            }
+    data_file = os.path.join(BASE_DIR, 'data', 'resume.json')
+    with open(data_file, 'r', encoding='utf-8') as f:
+        original_data = f.read()
+
+    try:
+        # Test POST /api/save
+        save_url = BASE_URL + '/api/save'
+        payload = {
+            "data": json.loads(original_data)
         }
-    }
-    req = urllib.request.Request(save_url, data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'}, method='POST')
-    with urllib.request.urlopen(req) as resp:
-        result = json.loads(resp.read().decode('utf-8'))
-        assert result.get('success') is True, f"Save API failed: {result}"
-    print("✓ Studio Save API (/api/save) verified successfully.")
+        req = urllib.request.Request(save_url, data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'}, method='POST')
+        with urllib.request.urlopen(req) as resp:
+            result = json.loads(resp.read().decode('utf-8'))
+            assert result.get('success') is True, f"Save API failed: {result}"
+        print("✓ Studio Save API (/api/save) verified successfully.")
+    finally:
+        with open(data_file, 'w', encoding='utf-8') as f:
+            f.write(original_data)
 
     # Test GET /api/git-status
     git_url = BASE_URL + '/api/git-status'
