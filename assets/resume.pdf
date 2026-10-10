@@ -9,7 +9,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 2562 >>
+<< /Length 2544 >>
 stream
 BT
 /F1 10 Tf
@@ -108,7 +108,7 @@ T*
 T*
 (--------------------------------------------------------------------------------) Tj
 T*
-(\(Generated placeholder resume - update anytime in Studio or swap with your PDF\)) Tj
+(\(Generated placeholder resume - replace with your resume.pdf\)) Tj
 T*
 ET
 
@@ -127,10 +127,10 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000251 00000 n 
-0000002865 00000 n 
-0000002935 00000 n 
+0000002847 00000 n 
+0000002917 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-3010
+2992
 %%EOF

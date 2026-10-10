@@ -2,7 +2,7 @@
 """
 Automated Verification Script for Streamlined Portfolio Website.
 Verifies HTML structure, anchor links, relative asset paths, HTTP 200 status,
-and confirms studio editor files and links are completely removed.
+and confirms editor files and links are completely removed.
 """
 
 import os
@@ -38,7 +38,7 @@ def test_files_exist():
         full = os.path.join(BASE_DIR, rel_path)
         assert not os.path.exists(full), f"File should have been removed: {rel_path}"
 
-    print("✓ All 12 required files exist, and studio editor files are confirmed removed.")
+    print("✓ All 12 required files exist, and editor files are confirmed removed.")
 
 def test_html_semantics_and_links():
     with open(os.path.join(BASE_DIR, 'index.html'), 'r', encoding='utf-8') as f:

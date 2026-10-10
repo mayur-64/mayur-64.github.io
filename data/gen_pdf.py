@@ -44,7 +44,7 @@ def create_resume_pdf(output_path):
         "* Linux Professional Institute Certification (LPIC-1) | AWS Certified Solutions Architect",
         "",
         "--------------------------------------------------------------------------------",
-        "(Generated placeholder resume - update anytime in Studio or swap with your PDF)"
+        "(Generated placeholder resume - replace with your resume.pdf)"
     ]
 
     # Convert lines to PDF content stream
