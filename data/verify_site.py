@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Comprehensive Automated Verification Script for Portfolio and Studio Website.
+Automated Verification Script for Streamlined Portfolio Website.
 Verifies HTML structure, anchor links, relative asset paths, HTTP 200 status,
-and Studio Save/Deploy API endpoints.
+and confirms studio editor files and links are completely removed.
 """
 
 import os
 import re
 import urllib.request
-import json
+import urllib.error
 
 BASE_DIR = '/root/portfolio'
 BASE_URL = 'http://127.0.0.1:8080'
@@ -16,11 +16,8 @@ BASE_URL = 'http://127.0.0.1:8080'
 def test_files_exist():
     required = [
         'index.html',
-        'editor.html',
         'css/style.css',
-        'css/editor.css',
         'js/main.js',
-        'js/editor.js',
         'data/resume.json',
         'assets/favicon.svg',
         'assets/resume.pdf',
@@ -35,11 +32,21 @@ def test_files_exist():
         full = os.path.join(BASE_DIR, rel_path)
         assert os.path.exists(full), f"Missing file: {rel_path}"
         assert os.path.getsize(full) > 0, f"Empty file: {rel_path}"
-    print("✓ All 15 required files exist and are non-empty.")
+
+    removed_files = ['editor.html', 'css/editor.css', 'js/editor.js']
+    for rel_path in removed_files:
+        full = os.path.join(BASE_DIR, rel_path)
+        assert not os.path.exists(full), f"File should have been removed: {rel_path}"
+
+    print("✓ All 12 required files exist, and studio editor files are confirmed removed.")
 
 def test_html_semantics_and_links():
     with open(os.path.join(BASE_DIR, 'index.html'), 'r', encoding='utf-8') as f:
         html = f.read()
+
+    # Confirm no references to editor.html or btn-studio
+    assert 'editor.html' not in html, "index.html still references editor.html"
+    assert 'btn-studio' not in html, "index.html still references btn-studio"
 
     # Check SEO meta
     assert '<title>' in html and '</title>' in html, "Missing <title>"
@@ -88,24 +95,20 @@ def test_css_tokens():
     assert '@media (max-width: 768px)' in css, "Missing tablet/mobile responsive query"
     assert '@media (max-width: 480px)' in css, "Missing mobile responsive query"
     assert ':focus-visible' in css, "Missing accessible focus visible styles"
+    assert '.btn-studio' not in css, "style.css still contains .btn-studio"
     print("✓ CSS design tokens, dark/light themes, responsive breakpoints, and print CSS verified.")
 
 def test_http_endpoints():
     endpoints = [
         ('/', 200, 'text/html'),
         ('/index.html', 200, 'text/html'),
-        ('/editor.html', 200, 'text/html'),
         ('/css/style.css', 200, 'text/css'),
-        ('/css/editor.css', 200, 'text/css'),
         ('/js/main.js', 200, 'javascript'),
-        ('/js/editor.js', 200, 'javascript'),
         ('/assets/favicon.svg', 200, 'image/svg+xml'),
         ('/assets/resume.pdf', 200, 'application/pdf'),
         ('/assets/images/project-1.svg', 200, 'image/svg+xml'),
         ('/assets/images/project-2.svg', 200, 'image/svg+xml'),
         ('/assets/images/project-3.svg', 200, 'image/svg+xml'),
-        ('/api/data', 200, 'application/json'),
-        ('/api/git-status', 200, 'application/json')
     ]
 
     for path, exp_status, exp_type in endpoints:
@@ -116,40 +119,19 @@ def test_http_endpoints():
             assert status == exp_status, f"{path} returned {status}, expected {exp_status}"
             assert exp_type in content_type, f"{path} returned {content_type}, expected {exp_type}"
 
-    print(f"✓ All {len(endpoints)} HTTP endpoints successfully returned status 200.")
-
-def test_api_save_and_deploy():
-    data_file = os.path.join(BASE_DIR, 'data', 'resume.json')
-    with open(data_file, 'r', encoding='utf-8') as f:
-        original_data = f.read()
-
+    # Verify editor.html returns 404
     try:
-        # Test POST /api/save
-        save_url = BASE_URL + '/api/save'
-        payload = {
-            "data": json.loads(original_data)
-        }
-        req = urllib.request.Request(save_url, data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'}, method='POST')
-        with urllib.request.urlopen(req) as resp:
-            result = json.loads(resp.read().decode('utf-8'))
-            assert result.get('success') is True, f"Save API failed: {result}"
-        print("✓ Studio Save API (/api/save) verified successfully.")
-    finally:
-        with open(data_file, 'w', encoding='utf-8') as f:
-            f.write(original_data)
+        urllib.request.urlopen(BASE_URL + '/editor.html')
+        assert False, "/editor.html should return 404 but returned 200"
+    except urllib.error.HTTPError as e:
+        assert e.code == 404, f"Expected 404 for /editor.html, got {e.code}"
 
-    # Test GET /api/git-status
-    git_url = BASE_URL + '/api/git-status'
-    with urllib.request.urlopen(git_url) as resp:
-        git_res = json.loads(resp.read().decode('utf-8'))
-        assert git_res.get('branch') == 'main', f"Expected branch 'main', got {git_res.get('branch')}"
-        print(f"✓ Git Status API (/api/git-status) verified (branch: {git_res.get('branch')}, last commit: {git_res.get('last_commit')}).")
+    print(f"✓ All {len(endpoints)} HTTP endpoints verified; /editor.html confirmed 404.")
 
 if __name__ == '__main__':
-    print("Running automated verification suite...")
+    print("Running automated verification suite for streamlined portfolio...")
     test_files_exist()
     test_html_semantics_and_links()
     test_css_tokens()
     test_http_endpoints()
-    test_api_save_and_deploy()
-    print("\n🎉 ALL TESTS PASSED! Portfolio site and Studio Editor are 100% verified.")
+    print("\n🎉 ALL TESTS PASSED! Portfolio site is clean, fast, and verified.")
